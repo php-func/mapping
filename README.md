@@ -14,6 +14,7 @@ Column, Row, Table, Database
         handle: 
         
     class Param
+        value: Tom
         type: String
         name: Username
         path: User
@@ -29,8 +30,8 @@ Polega to na definicji źródła, np
     new Source(new Post);
     
     new ParamCollection();
-        add(new Param(new Type\String(), 'Username', 'User', 2));
-        add(new Param(new Type\String(), 'Password', 'User', 2));
+        add(new Param('Tom', new Type\String(), 'Username', 'User', 2));
+        add(new Param("Secret", new Type\String(), 'Password', 'User', 2));
        
     
 Wykonaniu prcoesu na parametrze zlokalizowanych w źródle, np 
